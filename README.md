@@ -10,12 +10,17 @@ SeleniumGridHub is a Selenium Grid automation framework for running tests across
 
 2. **Set Up Grid:** Navigate to the downloaded folder and execute and execute each of the following commands in individual command prompts:
 
-   java -jar selenium-server-4.12.1.jar event-bus
-   java -jar selenium-server-4.12.1.jar sessions
-   java -jar selenium-server-4.12.1.jar sessionqueue
-   Java -jar selenium-server-4.12.1.jar distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --bind-bus false
-   java -jar selenium-server-4.12.1.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559 --port 4444
-   java -jar selenium-server-4.12.1.jar node --detect-drivers true
+   1. java -jar selenium-server-4.12.1.jar event-bus
+      
+   2. java -jar selenium-server-4.12.1.jar sessions
+  
+   3. java -jar selenium-server-4.12.1.jar sessionqueue
+   
+   4. Java -jar selenium-server-4.12.1.jar distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --bind-bus false
+  
+   5. java -jar selenium-server-4.12.1.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559 --port 4444
+   
+   6. java -jar selenium-server-4.12.1.jar node --detect-drivers true
 
 3. **WebDriver Initialization:** Initialize WebDriver instances using the provided Environment class.
 
